@@ -2,7 +2,8 @@ require("dotenv").config();
 
 module.exports = {
   redis: {
-    url: process.env.REDIS_URL,
+    url: process.env.REDIS_URL ,
+    // tls: process.env.REDIS_TLS, // untuk fleksibilitas
   },
 
  jwt: {

@@ -51,16 +51,16 @@ const logoutService = async (req, res) => {
             throw new NotFoundError("gagal logout");
         }
     // Hapus cookie di FE browser
-    res.clearCookie("accessToken", {
-        httpOnly: true,
-        secure: process.env.NODE_ENV === "production",
-        sameSite: "strict",
-    });
-    res.clearCookie("refreshToken", {
-        httpOnly: true,
-        secure: process.env.NODE_ENV === "production",
-        sameSite: "strict",
-    });
+    // res.clearCookie("accessToken", {
+    //     httpOnly: true,
+    //     secure: process.env.NODE_ENV === "production",
+    //     sameSite: "strict",
+    // });
+    // res.clearCookie("refreshToken", {
+    //     httpOnly: true,
+    //     secure: process.env.NODE_ENV === "production",
+    //     sameSite: "strict",
+    // });
 
     return {
         success: true,

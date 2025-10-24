@@ -1,5 +1,5 @@
 const Joi = require('joi');
-const resFormat = require('../../../utility/format-res.utility');
+const resFormat = require('../../utility/format-res.utility');
 
 // Schema validasi registrasi
 const registerSchema = Joi.object({

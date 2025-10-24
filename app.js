@@ -20,10 +20,7 @@ const app = express();
 
 // === Middleware ===
 const allowedOrigins = [
-  "http://localhost:3000",
-  "http://localhost:5173",
-  "https://8c9798f4036d.ngrok-free.app",
-  "https://fd15a475b2ae.ngrok-free.app"
+  "http://localhost:3000"
 ];
 
 app.use(
